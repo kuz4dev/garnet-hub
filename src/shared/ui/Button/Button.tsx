@@ -22,6 +22,7 @@ export const Button: FC<ButtonProps> = (props) => {
     return (
         <button
             type="button"
+            // eslint-disable-next-line max-len
             className={classNames(cls.Button, { [cls[theme]]: true }, [className])}
             {...otherProps}
         >
