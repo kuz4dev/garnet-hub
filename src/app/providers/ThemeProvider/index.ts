@@ -1,5 +1,5 @@
-import ThemeProvider from "./ui/ThemeProvider";
-import { useTheme } from "./lib/useTheme";
+import ThemeProvider from './ui/ThemeProvider';
+import { useTheme } from './lib/useTheme';
 
 export enum Theme {
     LIGHT = 'light',
@@ -8,5 +8,5 @@ export enum Theme {
 
 export {
     ThemeProvider,
-    useTheme
+    useTheme,
 };
