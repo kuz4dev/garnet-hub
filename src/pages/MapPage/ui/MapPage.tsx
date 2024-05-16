@@ -1,10 +1,9 @@
+import {MapComponent} from "widgets/Map/ui/Map";
 
 const MapPage = () => {
 
     return (
-        <div>
-            Map
-        </div>
+        <MapComponent></MapComponent>
     );
 };
 
