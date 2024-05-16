@@ -1,25 +1,27 @@
-import { Link } from 'react-router-dom';
 import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classnames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import { AppRouter } from './providers/router';
+import { Layout } from 'antd';
+import { Footer } from "widgets/Footer";
 
 const App = () => {
     const { theme } = useTheme();
 
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <Layout className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
-                <Navbar />
-                <div className="content-page">
-                    <Sidebar />
+                <Sidebar />
+                <Layout className="content-page">
+                    <Navbar />
                     <AppRouter />
-                </div>
+                    <Footer />
+                </Layout>
             </Suspense>
-        </div>
+        </Layout>
     );
 };
 

@@ -80,6 +80,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
+    "antd": "^5.17.2",
     "axios": "^0.26.1",
     "concurrently": "^7.0.0",
     "i18next": "^21.6.11",

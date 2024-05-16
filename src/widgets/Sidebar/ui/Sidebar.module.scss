@@ -1,24 +1,32 @@
 .Sidebar {
-    height: calc(100vh - var(--navbar-height));
+    height: 100vh;
     width: var(--sidebar-width);
-    background: var(--inverted-bg-color);
-
     position: relative;
-    transition: width 0.3s;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-}
+//.Sidebar div {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//}
 
-.switchers {
-    position: absolute;
-    bottom: 20px;
+.Menu {
+    height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
 }
 
-.lang {
-    margin-left: 20px;
+.Ruby {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.Ruby svg {
+    fill: #ffffff;
+    width: 30px;
+    height: 30px;
 }
